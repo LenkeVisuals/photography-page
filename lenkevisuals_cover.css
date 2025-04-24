@@ -1,0 +1,177 @@
+body {
+    background-color: #232323;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.6;
+
+
+}
+
+.cover__header--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #faeee4;
+    text-shadow:
+        0 0 5px rgba(247, 156, 71, 0.678),
+        0 0 15px rgba(247, 125, 49, 0.678),
+        0 0 50px rgba(247, 156, 71, 0.836);
+    margin: 0;
+
+}
+
+h1:hover {
+    color: #faeee4;
+    text-shadow:
+        0 0 10px rgba(247, 156, 71, 0.678),
+        0 0 30px rgba(247, 125, 49, 0.678),
+        0 0 70px rgba(247, 156, 71, 0.836);
+    transition: 0.5s;
+
+}
+
+h3 {
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    list-style: circle;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #faeee4;
+    line-height: 30px;
+    letter-spacing: 6px;
+    margin: 0
+}
+
+.cover__language--container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+
+
+
+}
+
+.cover__language--button {
+    font-family: 'Work Sans', sans-serif;
+    background-color: none;
+    border: solid thin #faeee4;
+    color: #faeee4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    white-space: nowrap;
+    padding: 15px 80px;
+    margin: 0 50px;
+    text-align: center;
+
+}
+
+.cover__language--button:hover {
+    text-shadow:
+        0 0px 5px rgba(255, 242, 229, 0.521),
+        0 0px 10px rgba(255, 255, 255, 0.46);
+
+    transition: 0.2s;
+    box-shadow:
+
+        0px 0px 10px rgba(255, 242, 229, 0.446);
+}
+
+.cover__language--button:active {
+
+
+    animation: pushButton 0.3s forwards;
+}
+.cover__content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+ }
+
+
+
+
+@keyframes pushButton {
+    0% {
+        position: relative;
+        bottom: -1px;
+    }
+
+
+
+    100% {
+        position: relative;
+        bottom: -1px;
+        box-shadow:
+            0px 0px 3px rgba(255, 242, 229, 0.346);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    html {
+        font-size: 14px;
+    }
+
+   
+
+
+}
+
+
+
+@media screen and (max-width: 819px) {
+
+    html {
+        font-size: 9px;
+    }
+
+    video {
+        position: fixed;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    .cover__language--button {
+        padding: 15px 50px;
+        margin: 0px 10px;
+    }
+    .cover__language--container{
+        margin: 30px 0px;
+    }
+}
